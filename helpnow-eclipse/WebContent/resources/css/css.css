@@ -1,0 +1,79 @@
+body {
+    font-size:10px;
+    font-family: tahoma;
+    background-color: #1F8871;
+    color: #333;
+    text-align: left;
+}
+
+h1 {
+    margin: 10px 20px 10px 20px;
+}
+#tudo{
+    margin-top:0%;
+    width:80%;
+    margin-left: 10%;
+    background: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#centro{
+    width: 80%;
+     margin-left: 10%;
+    background: #F0FFFF;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.tabelaArea{
+    width:94%;
+    margin-left:3%
+}
+
+.consultaArea{
+    width:50%;
+    margin-left:25%
+}
+
+.btnAdicionar{
+    margin-left:12%;
+}
+.btnAdicionarArea{
+    margin-left:66%;
+}
+
+.btnArea{
+    margin-left:83%;
+}
+.labelAdicionar{
+    margin-left:60%;
+    text-decoration: none;
+    color: #1F8871;
+    font-size: 14px;
+}
+.deslogar{
+    margin-left:85%;
+    top:-5%;
+}
+.ui-stack ul li{
+    font-size:13px;
+    width:45px;
+    height:45px;
+}
+.ui-stack ul li span{
+     width: 160px;
+}
+.ui-stack {
+    bottom: 28px;
+    right: 40px;
+} 
+.ui-stack ul li img{
+    width:150%;
+}

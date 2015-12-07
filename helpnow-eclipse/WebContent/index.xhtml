@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+   
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Help Now</title>
+        <link href="resources/css/csslogin.css" rel="stylesheet" type="text/css" />
+        <link rel="SHORTCUT ICON" href="http://www.travelmate.com.br/logoescola/hn_logo.png"/>
+        
+    </h:head>
+
+    <h:body >
+            <h:form id="login" class="login">
+                <p:growl id="growl" showDetail="true" sticky="true" />
+                <p:ajaxStatus onstart="PF('statusDialog').show()" onsuccess="PF('statusDialog').hide()" />
+
+                <p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+                    <img src="resources/img/carregarLogin.gif" />
+                </p:dialog>
+                <img  class="logologin" src="resources/img/logo.png"     />
+                <div id="centrologin" class="tabelalogin">
+                    
+                    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                    <br></br><br></br><br></br><br></br>
+                    <p:outputLabel value="Login" class="espacologinbra"/>
+                    <br></br>
+                    <p:inputText value="#{usuarioLogadoMB.usuario.login}" size="40" class="espacologin" />
+                    <br></br><br></br>
+                    <p:outputLabel value="Senha" class="espacologinbra"/>
+                    <br></br>
+                    <p:inputText value="#{usuarioLogadoMB.usuario.senha}" type="password"  size="40" class="espacologin"/>
+                     <br></br><br></br>
+                     <p:commandButton value="Login" class="loginButton" action="#{usuarioLogadoMB.validarUsuario()}" update="growl"/>
+                    <p:commandButton value="Alterar Senha" action="#{usuarioLogadoMB.validarTrocarSenha()}" class="loginButton2"  oncomplete="PF('dll').show()"  />
+                                
+                    <br></br><br></br><br></br><br></br><br></br>
+                </div>
+            </h:form>
+        <h:outputScript library="js" name="jquery.js" />
+	<h:outputScript library="js" name="index.js" />
+    </h:body>
+</html>
