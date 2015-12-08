@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14495871391490" configfile="/helpnow-eclipse/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="1138" id="pf14495871521781" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf14495871521782 pf14495871521783 pf14495871521784 pf14495871521785 pf14495871521786 pf14495871521787" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/chamado/cadChamado.xhtml" x="338" y="178" id="pf14495871521788" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14495871521782" path="/pages/chamado/cadChamado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/chamado/consChamado.xhtml" x="338" y="562" id="pf14495871521789" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf14495871521783" path="/pages/chamado/consChamado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/chamado/consSupChamado.xhtml" x="338" y="946" id="pf144958715217810" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf14495871521784" path="/pages/chamado/consSupChamado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/area/consArea.xhtml" x="338" y="1330" id="pf144958715217811" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf14495871521785" path="/pages/area/consArea.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/chamado/interacao.xhtml" x="338" y="1714" id="pf144958715217812" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" inlinks="pf14495871521786" path="/pages/chamado/interacao.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="2098" id="pf144958715217813" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" inlinks="pf14495871521787" path="index.xhtml"/>
+  <links id="pf14495871521782" target="pf14495871521788" source="pf14495871521781" outcome="cadastrochamado" redirect="true"/>
+  <links id="pf14495871521783" target="pf14495871521789" source="pf14495871521781" outcome="consultaChamado" redirect="true"/>
+  <links id="pf14495871521784" target="pf144958715217810" source="pf14495871521781" outcome="consultaChamadoSuporte" redirect="true"/>
+  <links id="pf14495871521785" target="pf144958715217811" source="pf14495871521781" outcome="consultaarea" redirect="true"/>
+  <links id="pf14495871521786" target="pf144958715217812" source="pf14495871521781" outcome="interacao" redirect="true"/>
+  <links id="pf14495871521787" target="pf144958715217813" source="pf14495871521781" outcome="login" redirect="true"/>
+</pageflow:Pageflow>

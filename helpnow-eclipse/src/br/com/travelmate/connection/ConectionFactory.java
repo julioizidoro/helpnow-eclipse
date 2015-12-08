@@ -56,7 +56,7 @@ public class ConectionFactory {
             }
             String driverName = "com.mysql.jdbc.Driver";
             String serverName = "186.215.116.63";
-            String mydatabase ="sysfin";
+            String mydatabase ="systm";
             String url = "jdbc:mysql://" + serverName + ":8082/" + mydatabase;
             String username = "root";
             String password = "jfhmaster123";
@@ -75,7 +75,7 @@ public class ConectionFactory {
         try {
             Context initContext = new InitialContext();
             Context envContext = (Context) initContext.lookup("java:/comp/env/");
-            javax.sql.DataSource ds = (javax.sql.DataSource) envContext.lookup("jdbc/websysfinDS");//estou usando o Spring nessecaso por isso utilizo essa sinxtaxe
+            javax.sql.DataSource ds = (javax.sql.DataSource) envContext.lookup("jdbc/websystmDS");//estou usando o Spring nessecaso por isso utilizo essa sinxtaxe
             conexao = (Connection) ds.getConnection();
         } catch (NamingException ex) {
             Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
