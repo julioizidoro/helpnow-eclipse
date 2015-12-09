@@ -7,7 +7,6 @@ import br.com.travelmate.util.EnviarEmailBean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executor;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -20,7 +19,11 @@ import org.primefaces.context.RequestContext;
 @ViewScoped
 public class IniciarChamadoMB implements Serializable{
     
-    private Usuario UsuarioExecutor;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Usuario UsuarioExecutor;
     private List<Usuario> listaExecutor;
     private Chamado chamado;
     

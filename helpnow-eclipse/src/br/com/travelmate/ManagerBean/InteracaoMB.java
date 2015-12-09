@@ -16,7 +16,11 @@ import javax.servlet.http.HttpSession;
 @ViewScoped
 public class InteracaoMB implements Serializable{
     
-    private Interacao interacao;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Interacao interacao;
     private List<Interacao> listaInteracao;
     private Chamado chamado;
     

@@ -21,7 +21,11 @@ import org.primefaces.context.RequestContext;
 @ViewScoped
 public class CadChamadoMB implements Serializable{
     
-    @Inject
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Inject
     private UsuarioLogadoMB usuarioLogadoMB;
     private Chamado chamado;
     private List<Area> listaArea;
