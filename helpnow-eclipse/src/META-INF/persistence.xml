@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="systmPU" transaction-type="RESOURCE_LOCAL">
-		<class>br.com.travelmate.model.Usuario</class>
 		<class>br.com.travelmate.model.Area</class>
 		<class>br.com.travelmate.model.Chamado</class>
 		<class>br.com.travelmate.model.Interacao</class>
 		<class>br.com.travelmate.model.Unidadenegocio</class>
+		<class>br.com.travelmate.model.Usuario</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://200.175.61.147:8082/systm"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>
